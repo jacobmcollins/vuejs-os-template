@@ -21,9 +21,9 @@ export default new Vuex.Store({
       {
         windowId: "LoremIpsum", // Unique ID
         windowState: "close", // Window State [open, close, minimize]
-        displayName: "Lorem Ipsum", // Display Name (title under icon)
+        displayName: "About", // Display Name (title under icon)
         windowComponent: 'window', // Window Component (can be changed to use modified windows)
-        windowContent: 'Placeholder', // Window Content (used under slots)
+        windowContent: 'About', // Window Content (used under slots)
         windowContentPadding: {
           top: null,
           right: null,
@@ -33,66 +33,9 @@ export default new Vuex.Store({
         position: "absolute", // Window Position
         positionX: "10vw", // Window Position X (when first opened)
         positionY: "15vh", // Window Position Y (when first opened)
-        iconImage: "placeholder.png", // Window Icon Image
+        iconImage: "computer_explorer-4.png", // Window Icon Image
         altText: "Placeholder Icon", // Window Icon Alt Text
         fullscreen: false // Window Fullscreen State [true, false]
-      },
-      {
-        windowId: "MacOS", 
-        windowState: "close",
-        displayName: "MacOS Theme",
-        windowComponent: 'OSWindow',
-        windowContent: 'MacOS',
-        windowContentPadding: {
-          top: '0px',
-          right: '0px',
-          bottom: '0px',
-          left: '0px'
-        },
-        position: "absolute",
-        positionX: "1vw",
-        positionY: "1vh",
-        iconImage: "placeholder.png",
-        altText: "Placeholder Icon",
-        fullscreen: false
-      },
-      {
-        windowId: "Windows", 
-        windowState: "close",
-        displayName: "Windows Theme",
-        windowComponent: 'OSWindow',
-        windowContent: 'Windows',
-        windowContentPadding: {
-          top: '0px',
-          right: '0px',
-          bottom: '0px',
-          left: '0px'
-        },
-        position: "absolute",
-        positionX: "1vw",
-        positionY: "1vh",
-        iconImage: "placeholder.png",
-        altText: "Placeholder Icon",
-        fullscreen: false
-      },
-      {
-        windowId: "Blueprint", 
-        windowState: "close",
-        displayName: "Blueprint Theme",
-        windowComponent: 'OSWindow',
-        windowContent: 'Blueprint',
-        windowContentPadding: {
-          top: '0px',
-          right: '0px',
-          bottom: '0px',
-          left: '0px'
-        },
-        position: "absolute",
-        positionX: "1vw",
-        positionY: "1vh",
-        iconImage: "placeholder.png",
-        altText: "Placeholder Icon",
-        fullscreen: false
       },
       {
         windowId: "PhotoWindow", 
@@ -109,7 +52,7 @@ export default new Vuex.Store({
         position: "absolute",
         positionX: "6vw",
         positionY: "12vh",
-        iconImage: "placeholder.png",
+        iconImage: "directory_closed-4.png",
         altText: "Placeholder Icon",
         fullscreen: false
       },

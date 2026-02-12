@@ -18,7 +18,6 @@
     </div>
     <div class="spacer"></div>
     <div alt="time" class="time">
-        <!-- <img src="../assets/speakers.png" class="icon-image"/> -->
         <time>
             {{time}}
         </time>

@@ -1,18 +1,35 @@
 <template>
     <div>
         <p>
-            Some of my favorite photos I've taken.
+            Hi! I’m Joe, the face (and camera!) behind Not Your Average Joe Photos.
         </p>
         <div class="grid">
-            <img src="../../assets/photos/mocha.jpg" />
-            <img src="../../assets/photos/sandwich.jpg" />
-            <img src="../../assets/photos/burtreynolds.jpg" />
-            <img src="../../assets/photos/starbucks.jpg" />
+            <img src="../../assets/photos/joe.jpg" />
         </div>
     </div>
 </template>
 
+<script setup>
+import { onMounted, onUnmounted } from 'vue';
+
+let x = new Audio(require('../../assets/dial-up-modem-01.mp3'));
+
+onMounted(() => {
+    x.play();
+});
+
+onUnmounted(() => {
+    x.pause();
+    x.currentTime = 0;
+});
+</script>
+
 <style scoped>
+.p {
+    margin: 0;
+    padding: 0;
+}
+
 .grid {
     column-count: 2;
     column-gap: 0.5em;
@@ -34,3 +51,4 @@ img {
     }
 }
 </style>
+

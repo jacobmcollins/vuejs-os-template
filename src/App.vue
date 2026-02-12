@@ -36,10 +36,11 @@
     Import Components, you can change the path for different
     component themes (blueprint, windows, macos)
 \*------------------------------------------------------------*/
-import Navbar from './components/blueprint/Navbar'
+import Navbar from './components/windows/Navbar'
 // import TopNavbar from './components/macos/TopNavbar.vue'
 import Window from './components/template/Window'
 import AppGrid from './components/AppGrid'
+import About from './components/views/About'
 import Placeholder from './components/views/Placeholder'
 import Photos from './components/views/Photos'
 import OSWindow from './components/template/OSWindow'
@@ -58,6 +59,7 @@ export default {
         Window,
         Navbar,
         AppGrid,
+        About,
         Placeholder,
         Photos,
         OSWindow,
@@ -124,9 +126,9 @@ export default {
     Change 'blueprint' to 'windows' or 'macos' to use windows or macos theme
 \*---------------------------------------------------------------------------*/
 @import './assets/css/utils/normalize.css';
-@import './assets/css/blueprint/app.css';
-@import './assets/css/blueprint/window.css';
-@import './assets/css/blueprint/appgrid.css';
+@import './assets/css/windows/app.css';
+@import './assets/css/windows/window.css';
+@import './assets/css/windows/appgrid.css';
 
 /*-------------------------------------------*\
     Utilities
